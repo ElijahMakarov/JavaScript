@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS L2</title>
+</head>
+<body>
+<script>
+   let songs = [
+       'song1',
+       'song2',
+       'song3',
+       'song4',
+       'song5',
+       'song6',
+       'song7',
+       'song8',
+       'song9',
+       'song10',
+   ];
+    console.log(songs[0]);
+    console.log(songs[1]);
+    console.log(songs[2]);
+    console.log(songs[3]);
+    console.log(songs[4]);
+    console.log(songs[5]);
+    console.log(songs[6]);
+    console.log(songs[7]);
+    console.log(songs[8]);
+    console.log(songs[9]);
+
+
+   let bookDescrib1 = {
+       title:'title1',
+       pageCount: 200,
+       genre: 'genre1',
+   };
+   let bookDescrib2 = {
+       title:'title2',
+       pageCount: 201,
+       genre: 'genre2',
+   };
+   let bookDescrib3 = {
+       title:'title3',
+       pageCount: 202,
+       genre: 'genre3',
+   };
+    console.log(bookDescrib1);
+    console.log(bookDescrib2);
+    console.log(bookDescrib3);
+
+
+   let bookDesc1 = {
+       title: 'title4',
+       pageCount: 200,
+       genre: 'genre4',
+       autors: [
+           {name: 'autorName1', age: 22},
+           {name: 'autorName2', age: 29},
+   ],
+   };
+   let bookDesc2 = {
+       title: 'title5',
+       pageCount: 260,
+       genre: 'genre5',
+       autors: [
+           {name: 'autorName3', age: 76},
+           {name: 'autorName4', age: 28},
+       ],
+   };
+   let bookDesc3 = {
+       title: 'title6',
+       pageCount: 220,
+       genre: 'genre6',
+       autors: [
+           {name: 'autorName5', age: 33},
+           {name: 'autorName6', age: 54},
+       ],
+   };
+    console.log(bookDesc1);
+    console.log(bookDesc2);
+    console.log(bookDesc3);
+
+
+   let users = [
+       {name: 'n1', userName: 'un1', password: 'p1'},
+       {name: 'n2', userName: 'un2', password: 'p2'},
+       {name: 'n3', userName: 'un3', password: 'p3'},
+       {name: 'n4', userName: 'un4', password: 'p4'},
+       {name: 'n5', userName: 'un5', password: 'p5'},
+       {name: 'n6', userName: 'un6', password: 'p6'},
+       {name: 'n7', userName: 'un7', password: 'p7'},
+       {name: 'n8', userName: 'un8', password: 'p8'},
+       {name: 'n9', userName: 'un9', password: 'p9'},
+       {name: 'n10', userName: 'un10', password: 'p10'},
+   ]
+    console.log(users[0].password);
+    console.log(users[1].password);
+    console.log(users[2].password);
+    console.log(users[3].password);
+    console.log(users[4].password);
+    console.log(users[5].password);
+    console.log(users[6].password);
+    console.log(users[7].password);
+    console.log(users[8].password);
+    console.log(users[9].password);
+
+
+    let x1 = -3
+   if (x1 !== 0) {
+       console.log('Вірно');
+   }
+   else {console.log('Невірно');
+   }
+
+
+    let time = 44;
+   if (time <=14 && time >=0) {
+       console.log('Перша частина');
+   }
+   else if (time >=15 && time <=29) {
+       console.log('Друга частина');
+   }
+   else if (time >=30 && time <=44) {
+       console.log('Третя частина');
+   }
+   else if (time >=45 && time <=59) {
+       console.log('Четверта частина');
+   }
+   else {console.log('Wrong number');}
+
+    let day = 31;
+   if (day >=1 && day <=10) {
+       console.log('Перша декада');
+   }
+   else if (day >=11 && day <=20) {
+       console.log('Друга декада');
+   }
+   else if (day >=21 && day <=31) {
+       console.log('Третя декада');
+   }
+   else {console.log('Wrong number');}
+
+
+    let days = 8;
+   switch (days) {
+       case 1:
+           console.log('Monday');
+           break;
+       case 2:
+           console.log('Tuesday');
+           break;
+       case 3:
+           console.log('Wednesday');
+           break;
+       case 4:
+           console.log('Thursday');
+           break;
+       case 5:
+           console.log('Friday');
+           break;
+       case 6:
+           console.log('Saturday');
+           break;
+       case 7:
+           console.log('Sunday');
+           break;
+       default:
+           console.log('Wrong day');
+   }
+
+
+    let fN = 5;
+    let sN = 8;
+    if (fN > sN) {
+        console.log(fN);
+    }
+    else if (sN > fN) {
+        console.log(sN);
+    }
+    else if (fN === sN) {
+        console.log('Equal');
+    }
+    else {
+        console.log('Wrong numbers');
+    }
+
+
+    let x2 = null;
+    let check = x2 || 'default';
+    console.log(check)
+
+
+   let coursesAndDurationArray = [
+       {title: 'JavaScript Complex', monthDuration: 5},
+       {title: 'Java Complex', monthDuration: 6},
+       {title: 'Python Complex', monthDuration: 6},
+       {title: 'QA Complex', monthDuration: 4},
+       {title: 'FullStack', monthDuration: 7},
+       {title: 'Frontend', monthDuration: 4}
+   ];
+
+   if (coursesAndDurationArray[0].monthDuration > 5) {console.log('Супер');}
+   if (coursesAndDurationArray[1].monthDuration > 5) {console.log('Супер');}
+   if (coursesAndDurationArray[2].monthDuration > 5) {console.log('Супер');}
+   if (coursesAndDurationArray[3].monthDuration > 5) {console.log('Супер');}
+   if (coursesAndDurationArray[4].monthDuration > 5) {console.log('Супер');}
+   if (coursesAndDurationArray[5].monthDuration > 5) {console.log('Супер');}
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
